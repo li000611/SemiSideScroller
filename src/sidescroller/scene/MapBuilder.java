@@ -31,7 +31,6 @@ public class MapBuilder implements MapBuilderInterface {
     protected MapBuilder() {
         landMass = new ArrayList<>();
         other = new ArrayList<>();
-
     }
 
     //the static method only returns an instance of MapBuilder.

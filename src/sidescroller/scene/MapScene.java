@@ -9,12 +9,14 @@ import sidescroller.entity.property.HitBox;
 import sidescroller.entity.sprite.tile.BackgroundTile;
 import sidescroller.entity.sprite.tile.FloraTile;
 import sidescroller.entity.sprite.tile.Tile;
+import utility.RandUtil;
 import utility.Tuple;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.BiFunction;
 
+//I'm using JavaFx library 11.0.
 public class MapScene implements MapSceneInterface {
 
     private Tuple count;
@@ -132,6 +134,8 @@ public class MapScene implements MapSceneInterface {
        //make background
         BiFunction<Integer, Integer, Tile> callback = (row, col) -> {
             if (row < 3) {
+                int probability = RandUtil.getInt(100);
+                if(probability <30)
                 return BackgroundTile.EVENING_CLOUD;
             }
             return BackgroundTile.EVENING;
@@ -147,7 +151,7 @@ public class MapScene implements MapSceneInterface {
                     mb.buildTree(8,11,FloraTile.SUNFLOWER_LONG);
                     background = mb.getBackground();
                     mb.getEntities(staticShapes());
-                    return (MapScene) this;
+                    return this;
     }
 
     @Override
