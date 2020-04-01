@@ -26,7 +26,7 @@ public class MapBuilder implements MapBuilderInterface {
     private List<Entity> landMass;
     private List<Entity> other;
 
-    //I'm using JavaFx library 11.0.
+    //I'm using JavaFx library 15.0.
     //Initialize the lists inside of the constructor.
     protected MapBuilder() {
         landMass = new ArrayList<>();

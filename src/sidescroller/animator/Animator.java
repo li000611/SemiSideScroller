@@ -12,7 +12,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.function.Consumer;
 
-//I'm using JavaFx library 11.0.
+//I'm using JavaFx library 15.0.
 public class Animator extends AbstractAnimator{
 
     private Color background = Color.ANTIQUEWHITE;

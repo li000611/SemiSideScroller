@@ -10,7 +10,7 @@ import sidescroller.scene.MapSceneInterface;
 import utility.Tuple;
 import javafx.animation.AnimationTimer;
 
-//I'm using JavaFx library 11.0.
+//I'm using JavaFx library 15.0.
 public abstract class AbstractAnimator extends AnimationTimer implements AnimatorInterface {
     protected MapSceneInterface map;
     protected Tuple mouse;
