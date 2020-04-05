@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Main-Class: sidescroller.SideScroller  #needs this line
+Implementation-Title: junit-jupiter
+Automatic-Module-Name: org.junit.jupiter
+Build-Date: 2019-04-07
+Implementation-Version: 5.4.2
+Built-By: JUnit Team
+Specification-Vendor: junit.org
+Specification-Title: junit-jupiter
+Implementation-Vendor: junit.org
+Build-Revision: bbf9a73f364a52a018a04fc24861cb6232d43f63
+Build-Time: 19:28:02.763+0200
+Created-By: 11.0.2 (Oracle Corporation 11.0.2+9)
+Specification-Version: 5.4.2
+

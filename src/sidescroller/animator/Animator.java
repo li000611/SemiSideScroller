@@ -4,7 +4,6 @@ package sidescroller.animator;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.paint.Color;
 import sidescroller.entity.player.Player;
-import sidescroller.entity.property.Drawable;
 import sidescroller.entity.property.Entity;
 import sidescroller.entity.property.HitBox;
 
@@ -12,7 +11,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.function.Consumer;
 
-//I'm using JavaFx library 15.0.
+
 public class Animator extends AbstractAnimator{
 
     private Color background = Color.ANTIQUEWHITE;

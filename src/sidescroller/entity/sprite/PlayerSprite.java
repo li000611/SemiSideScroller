@@ -5,9 +5,7 @@ import javafx.scene.image.Image;
 import sidescroller.entity.property.Sprite;
 import sidescroller.entity.sprite.tile.Samurai;
 
-public class
-
-PlayerSprite extends Sprite{
+public class PlayerSprite extends Sprite{
 
 	private static final Image IDE = new Image( "file:assets\\samurai\\Idle_strip4.png");
 	private static final Image RUN = new Image( "file:assets\\samurai\\Run_strip4.png");

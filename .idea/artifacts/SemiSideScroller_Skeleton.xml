@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="SemiSideScroller-Skeleton">
+    <output-path>$PROJECT_DIR$/assets</output-path>
+    <root id="root">
+      <element id="archive" name="SemiSideScroller_Skeleton.jar">
+        <element id="module-output" name="SemiSideScroller-Skeleton" />
+      </element>
+    </root>
+  </artifact>
+</component>

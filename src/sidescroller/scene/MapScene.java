@@ -16,7 +16,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.function.BiFunction;
 
-//I'm using JavaFx library 11.0.
 public class MapScene implements MapSceneInterface {
 
     private Tuple count;

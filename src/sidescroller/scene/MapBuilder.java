@@ -13,7 +13,6 @@ import sidescroller.entity.sprite.tile.Tile;
 import utility.Tuple;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.function.BiFunction;
 
@@ -26,7 +25,7 @@ public class MapBuilder implements MapBuilderInterface {
     private List<Entity> landMass;
     private List<Entity> other;
 
-    //I'm using JavaFx library 15.0.
+ 
     //Initialize the lists inside of the constructor.
     protected MapBuilder() {
         landMass = new ArrayList<>();

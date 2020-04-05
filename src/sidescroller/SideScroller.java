@@ -1,5 +1,4 @@
 package sidescroller;
-
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.beans.property.BooleanProperty;
@@ -7,8 +6,15 @@ import javafx.event.ActionEvent;
 import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.canvas.Canvas;
-import javafx.scene.control.*;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
+import javafx.scene.control.CheckMenuItem;
+import javafx.scene.control.Label;
+import javafx.scene.control.Menu;
+import javafx.scene.control.MenuBar;
+import javafx.scene.control.MenuItem;
+import javafx.scene.control.SeparatorMenuItem;
+import javafx.scene.control.ToolBar;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
@@ -19,14 +25,11 @@ import javafx.stage.Stage;
 import sidescroller.animator.Animator;
 import sidescroller.entity.player.Player;
 import sidescroller.entity.player.PlayerInput;
-import sidescroller.entity.property.Entity;
 import sidescroller.entity.sprite.PlayerSprite;
 import sidescroller.scene.MapScene;
 import sidescroller.scene.MapSceneInterface;
 import utility.InputAdapter;
 import utility.Tuple;
-
-import java.util.List;
 
 /**
  * 
@@ -87,7 +90,7 @@ public class SideScroller extends Application{
 		//  I've already done.
 		 canvas = new Canvas(width, height);
 		 board = new MapScene();
-		board.setRowAndCol(Tuple.pair(ROWS,COLS),Tuple.pair(SIZE,SIZE), SCALE);
+		board.setRowAndCol(Tuple.pair(ROWS,COLS), Tuple.pair(SIZE,SIZE), SCALE);
 		Animator animator = new Animator();
 		animator.setCanvas(canvas);
 		animator.setMapScene(board);
@@ -97,10 +100,9 @@ public class SideScroller extends Application{
 		ps.setScale(SCALE);
 		Player player = new Player(width/2, height/5, 20*SCALE, 20*SCALE, ps);
 		player.setInput(input);
-		List<Entity> players =  board.players();
-		players.add(player);
-		Region optionsBar = createOptionsBar();
+		board.players().add(player);
 		Region statusBar = createStatusBar();
+		Region optionsBar = createOptionsBar();
         root = new BorderPane();
 		root.setTop(optionsBar);
 		root.setCenter(canvas);
